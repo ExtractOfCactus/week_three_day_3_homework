@@ -40,6 +40,11 @@ class Artist
     ) WHERE id = #{@id}"
     SqlRunner.run(sql)
   end
+
+  def delete()
+    sql = "DELETE FROM artists WHERE id = #{@id}"
+    SqlRunner.run(sql)
+  end
   
 
   def Artist.all()
